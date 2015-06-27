@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4354FDCB1B3EBC4500A50816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */; };
+		4354FDCD1B3EBC4500A50816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDCC1B3EBC4500A50816 /* ViewController.swift */; };
+		4354FDD01B3EBC4500A50816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDCE1B3EBC4500A50816 /* Main.storyboard */; };
+		4354FDD21B3EBC4500A50816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDD11B3EBC4500A50816 /* Assets.xcassets */; };
+		4354FDD51B3EBC4500A50816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDD31B3EBC4500A50816 /* LaunchScreen.storyboard */; };
+		4354FDE01B3EBC4500A50816 /* ProjectDaliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDDF1B3EBC4500A50816 /* ProjectDaliTests.swift */; };
+		4354FDEB1B3EBC4500A50816 /* ProjectDaliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDEA1B3EBC4500A50816 /* ProjectDaliUITests.swift */; };
+		4354FDF01B3EBC4500A50816 /* ProjectDali WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4354FDEF1B3EBC4500A50816 /* ProjectDali WatchKit App.app */; };
+		4354FDF61B3EBC4500A50816 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDF41B3EBC4500A50816 /* Interface.storyboard */; };
+		4354FDF81B3EBC4500A50816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDF71B3EBC4500A50816 /* Assets.xcassets */; };
+		4354FDFF1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4354FDFE1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4354FE041B3EBC4500A50816 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FE031B3EBC4500A50816 /* InterfaceController.swift */; };
+		4354FE061B3EBC4500A50816 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */; };
+		4354FE081B3EBC4500A50816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354FE071B3EBC4500A50816 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4354FDDC1B3EBC4500A50816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4354FDBF1B3EBC4500A50816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354FDC61B3EBC4500A50816;
+			remoteInfo = ProjectDali;
+		};
+		4354FDE71B3EBC4500A50816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4354FDBF1B3EBC4500A50816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354FDC61B3EBC4500A50816;
+			remoteInfo = ProjectDali;
+		};
+		4354FDF11B3EBC4500A50816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4354FDBF1B3EBC4500A50816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354FDEE1B3EBC4500A50816;
+			remoteInfo = "ProjectDali WatchKit App";
+		};
+		4354FE001B3EBC4500A50816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4354FDBF1B3EBC4500A50816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354FDFD1B3EBC4500A50816;
+			remoteInfo = "ProjectDali WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4354FE0F1B3EBC4500A50816 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4354FDFF1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FE131B3EBC4500A50816 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4354FDF01B3EBC4500A50816 /* ProjectDali WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4354FDC71B3EBC4500A50816 /* ProjectDali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDali.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4354FDCC1B3EBC4500A50816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4354FDCF1B3EBC4500A50816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4354FDD11B3EBC4500A50816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4354FDD41B3EBC4500A50816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4354FDD61B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4354FDDB1B3EBC4500A50816 /* ProjectDaliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectDaliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354FDDF1B3EBC4500A50816 /* ProjectDaliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDaliTests.swift; sourceTree = "<group>"; };
+		4354FDE11B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4354FDE61B3EBC4500A50816 /* ProjectDaliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectDaliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354FDEA1B3EBC4500A50816 /* ProjectDaliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDaliUITests.swift; sourceTree = "<group>"; };
+		4354FDEC1B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4354FDEF1B3EBC4500A50816 /* ProjectDali WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectDali WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354FDF51B3EBC4500A50816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4354FDF71B3EBC4500A50816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4354FDF91B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4354FDFE1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ProjectDali WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354FE031B3EBC4500A50816 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4354FE071B3EBC4500A50816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4354FE091B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4354FDC41B3EBC4500A50816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDD81B3EBC4500A50816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDE31B3EBC4500A50816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDFB1B3EBC4500A50816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4354FDBE1B3EBC4500A50816 = {
+			isa = PBXGroup;
+			children = (
+				4354FDC91B3EBC4500A50816 /* ProjectDali */,
+				4354FDDE1B3EBC4500A50816 /* ProjectDaliTests */,
+				4354FDE91B3EBC4500A50816 /* ProjectDaliUITests */,
+				4354FDF31B3EBC4500A50816 /* ProjectDali WatchKit App */,
+				4354FE021B3EBC4500A50816 /* ProjectDali WatchKit Extension */,
+				4354FDC81B3EBC4500A50816 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4354FDC81B3EBC4500A50816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4354FDC71B3EBC4500A50816 /* ProjectDali.app */,
+				4354FDDB1B3EBC4500A50816 /* ProjectDaliTests.xctest */,
+				4354FDE61B3EBC4500A50816 /* ProjectDaliUITests.xctest */,
+				4354FDEF1B3EBC4500A50816 /* ProjectDali WatchKit App.app */,
+				4354FDFE1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4354FDC91B3EBC4500A50816 /* ProjectDali */ = {
+			isa = PBXGroup;
+			children = (
+				4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */,
+				4354FDCC1B3EBC4500A50816 /* ViewController.swift */,
+				4354FDCE1B3EBC4500A50816 /* Main.storyboard */,
+				4354FDD11B3EBC4500A50816 /* Assets.xcassets */,
+				4354FDD31B3EBC4500A50816 /* LaunchScreen.storyboard */,
+				4354FDD61B3EBC4500A50816 /* Info.plist */,
+			);
+			path = ProjectDali;
+			sourceTree = "<group>";
+		};
+		4354FDDE1B3EBC4500A50816 /* ProjectDaliTests */ = {
+			isa = PBXGroup;
+			children = (
+				4354FDDF1B3EBC4500A50816 /* ProjectDaliTests.swift */,
+				4354FDE11B3EBC4500A50816 /* Info.plist */,
+			);
+			path = ProjectDaliTests;
+			sourceTree = "<group>";
+		};
+		4354FDE91B3EBC4500A50816 /* ProjectDaliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4354FDEA1B3EBC4500A50816 /* ProjectDaliUITests.swift */,
+				4354FDEC1B3EBC4500A50816 /* Info.plist */,
+			);
+			path = ProjectDaliUITests;
+			sourceTree = "<group>";
+		};
+		4354FDF31B3EBC4500A50816 /* ProjectDali WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4354FDF41B3EBC4500A50816 /* Interface.storyboard */,
+				4354FDF71B3EBC4500A50816 /* Assets.xcassets */,
+				4354FDF91B3EBC4500A50816 /* Info.plist */,
+			);
+			path = "ProjectDali WatchKit App";
+			sourceTree = "<group>";
+		};
+		4354FE021B3EBC4500A50816 /* ProjectDali WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4354FE031B3EBC4500A50816 /* InterfaceController.swift */,
+				4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */,
+				4354FE071B3EBC4500A50816 /* Assets.xcassets */,
+				4354FE091B3EBC4500A50816 /* Info.plist */,
+			);
+			path = "ProjectDali WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4354FDC61B3EBC4500A50816 /* ProjectDali */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4354FE141B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali" */;
+			buildPhases = (
+				4354FDC31B3EBC4500A50816 /* Sources */,
+				4354FDC41B3EBC4500A50816 /* Frameworks */,
+				4354FDC51B3EBC4500A50816 /* Resources */,
+				4354FE131B3EBC4500A50816 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4354FDF21B3EBC4500A50816 /* PBXTargetDependency */,
+			);
+			name = ProjectDali;
+			productName = ProjectDali;
+			productReference = 4354FDC71B3EBC4500A50816 /* ProjectDali.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4354FDDA1B3EBC4500A50816 /* ProjectDaliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4354FE171B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliTests" */;
+			buildPhases = (
+				4354FDD71B3EBC4500A50816 /* Sources */,
+				4354FDD81B3EBC4500A50816 /* Frameworks */,
+				4354FDD91B3EBC4500A50816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4354FDDD1B3EBC4500A50816 /* PBXTargetDependency */,
+			);
+			name = ProjectDaliTests;
+			productName = ProjectDaliTests;
+			productReference = 4354FDDB1B3EBC4500A50816 /* ProjectDaliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4354FDE51B3EBC4500A50816 /* ProjectDaliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4354FE1A1B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliUITests" */;
+			buildPhases = (
+				4354FDE21B3EBC4500A50816 /* Sources */,
+				4354FDE31B3EBC4500A50816 /* Frameworks */,
+				4354FDE41B3EBC4500A50816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4354FDE81B3EBC4500A50816 /* PBXTargetDependency */,
+			);
+			name = ProjectDaliUITests;
+			productName = ProjectDaliUITests;
+			productReference = 4354FDE61B3EBC4500A50816 /* ProjectDaliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4354FDEE1B3EBC4500A50816 /* ProjectDali WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4354FE101B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali WatchKit App" */;
+			buildPhases = (
+				4354FDED1B3EBC4500A50816 /* Resources */,
+				4354FE0F1B3EBC4500A50816 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4354FE011B3EBC4500A50816 /* PBXTargetDependency */,
+			);
+			name = "ProjectDali WatchKit App";
+			productName = "ProjectDali WatchKit App";
+			productReference = 4354FDEF1B3EBC4500A50816 /* ProjectDali WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4354FDFD1B3EBC4500A50816 /* ProjectDali WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4354FE0C1B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali WatchKit Extension" */;
+			buildPhases = (
+				4354FDFA1B3EBC4500A50816 /* Sources */,
+				4354FDFB1B3EBC4500A50816 /* Frameworks */,
+				4354FDFC1B3EBC4500A50816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProjectDali WatchKit Extension";
+			productName = "ProjectDali WatchKit Extension";
+			productReference = 4354FDFE1B3EBC4500A50816 /* ProjectDali WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4354FDBF1B3EBC4500A50816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "William Robinson";
+				TargetAttributes = {
+					4354FDC61B3EBC4500A50816 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4354FDDA1B3EBC4500A50816 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4354FDC61B3EBC4500A50816;
+					};
+					4354FDE51B3EBC4500A50816 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 4354FDC61B3EBC4500A50816;
+					};
+					4354FDEE1B3EBC4500A50816 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					4354FDFD1B3EBC4500A50816 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 4354FDC21B3EBC4500A50816 /* Build configuration list for PBXProject "ProjectDali" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4354FDBE1B3EBC4500A50816;
+			productRefGroup = 4354FDC81B3EBC4500A50816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4354FDC61B3EBC4500A50816 /* ProjectDali */,
+				4354FDDA1B3EBC4500A50816 /* ProjectDaliTests */,
+				4354FDE51B3EBC4500A50816 /* ProjectDaliUITests */,
+				4354FDEE1B3EBC4500A50816 /* ProjectDali WatchKit App */,
+				4354FDFD1B3EBC4500A50816 /* ProjectDali WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4354FDC51B3EBC4500A50816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FDD51B3EBC4500A50816 /* LaunchScreen.storyboard in Resources */,
+				4354FDD21B3EBC4500A50816 /* Assets.xcassets in Resources */,
+				4354FDD01B3EBC4500A50816 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDD91B3EBC4500A50816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDE41B3EBC4500A50816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDED1B3EBC4500A50816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FDF81B3EBC4500A50816 /* Assets.xcassets in Resources */,
+				4354FDF61B3EBC4500A50816 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDFC1B3EBC4500A50816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FE081B3EBC4500A50816 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4354FDC31B3EBC4500A50816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FDCD1B3EBC4500A50816 /* ViewController.swift in Sources */,
+				4354FDCB1B3EBC4500A50816 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDD71B3EBC4500A50816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FDE01B3EBC4500A50816 /* ProjectDaliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDE21B3EBC4500A50816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FDEB1B3EBC4500A50816 /* ProjectDaliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354FDFA1B3EBC4500A50816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354FE061B3EBC4500A50816 /* ExtensionDelegate.swift in Sources */,
+				4354FE041B3EBC4500A50816 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4354FDDD1B3EBC4500A50816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354FDC61B3EBC4500A50816 /* ProjectDali */;
+			targetProxy = 4354FDDC1B3EBC4500A50816 /* PBXContainerItemProxy */;
+		};
+		4354FDE81B3EBC4500A50816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354FDC61B3EBC4500A50816 /* ProjectDali */;
+			targetProxy = 4354FDE71B3EBC4500A50816 /* PBXContainerItemProxy */;
+		};
+		4354FDF21B3EBC4500A50816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354FDEE1B3EBC4500A50816 /* ProjectDali WatchKit App */;
+			targetProxy = 4354FDF11B3EBC4500A50816 /* PBXContainerItemProxy */;
+		};
+		4354FE011B3EBC4500A50816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354FDFD1B3EBC4500A50816 /* ProjectDali WatchKit Extension */;
+			targetProxy = 4354FE001B3EBC4500A50816 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4354FDCE1B3EBC4500A50816 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4354FDCF1B3EBC4500A50816 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4354FDD31B3EBC4500A50816 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4354FDD41B3EBC4500A50816 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4354FDF41B3EBC4500A50816 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4354FDF51B3EBC4500A50816 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4354FE0A1B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4354FE0B1B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4354FE0D1B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ProjectDali WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4354FE0E1B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ProjectDali WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4354FE111B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ProjectDali_WatchKit_Extension;
+				INFOPLIST_FILE = "ProjectDali WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		4354FE121B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ProjectDali_WatchKit_Extension;
+				INFOPLIST_FILE = "ProjectDali WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4354FE151B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProjectDali/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4354FE161B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProjectDali/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4354FE181B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProjectDaliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDaliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectDali.app/ProjectDali";
+			};
+			name = Debug;
+		};
+		4354FE191B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProjectDaliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDaliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectDali.app/ProjectDali";
+			};
+			name = Release;
+		};
+		4354FE1B1B3EBC4500A50816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProjectDaliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDaliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectDali;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4354FE1C1B3EBC4500A50816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProjectDaliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDaliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectDali;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4354FDC21B3EBC4500A50816 /* Build configuration list for PBXProject "ProjectDali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE0A1B3EBC4500A50816 /* Debug */,
+				4354FE0B1B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4354FE0C1B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE0D1B3EBC4500A50816 /* Debug */,
+				4354FE0E1B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4354FE101B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE111B3EBC4500A50816 /* Debug */,
+				4354FE121B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4354FE141B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE151B3EBC4500A50816 /* Debug */,
+				4354FE161B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4354FE171B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE181B3EBC4500A50816 /* Debug */,
+				4354FE191B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4354FE1A1B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4354FE1B1B3EBC4500A50816 /* Debug */,
+				4354FE1C1B3EBC4500A50816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4354FDBF1B3EBC4500A50816 /* Project object */;
+}
