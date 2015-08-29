@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4320EB071B52C77B00F8C9F2 /* AudioFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320EB061B52C77B00F8C9F2 /* AudioFileModel.swift */; };
+		4320EB091B52C80F00F8C9F2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320EB081B52C80F00F8C9F2 /* DataModel.swift */; };
+		43295B9C1B48333B00A2E745 /* StandardDeviationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43295B9B1B48333B00A2E745 /* StandardDeviationCalculator.swift */; };
+		434AC6061B4C61E900299B58 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AC6051B4C61E900299B58 /* HealthKitManager.swift */; };
 		4354FDCB1B3EBC4500A50816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */; };
 		4354FDCD1B3EBC4500A50816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FDCC1B3EBC4500A50816 /* ViewController.swift */; };
 		4354FDD01B3EBC4500A50816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4354FDCE1B3EBC4500A50816 /* Main.storyboard */; };
@@ -21,6 +25,9 @@
 		4354FE041B3EBC4500A50816 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FE031B3EBC4500A50816 /* InterfaceController.swift */; };
 		4354FE061B3EBC4500A50816 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */; };
 		4354FE081B3EBC4500A50816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354FE071B3EBC4500A50816 /* Assets.xcassets */; };
+		4354FE1E1B3EBC5600A50816 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4354FE1D1B3EBC5600A50816 /* HealthKit.framework */; };
+		4354FE221B3EBC6400A50816 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4354FE211B3EBC6400A50816 /* HealthKit.framework */; };
+		43B716641B516A670012BBA4 /* RequestHealthKitAccessIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B716631B516A670012BBA4 /* RequestHealthKitAccessIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4320EB061B52C77B00F8C9F2 /* AudioFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioFileModel.swift; path = Models/AudioFileModel.swift; sourceTree = "<group>"; };
+		4320EB081B52C80F00F8C9F2 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Models/DataModel.swift; sourceTree = "<group>"; };
+		43256C381B432DEE00A00716 /* ProjectDali WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ProjectDali WatchKit App.entitlements"; sourceTree = "<group>"; };
+		43295B9B1B48333B00A2E745 /* StandardDeviationCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardDeviationCalculator.swift; sourceTree = "<group>"; };
+		434AC6051B4C61E900299B58 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		4354FDC71B3EBC4500A50816 /* ProjectDali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDali.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4354FDCC1B3EBC4500A50816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +114,11 @@
 		4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		4354FE071B3EBC4500A50816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4354FE091B3EBC4500A50816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4354FE1D1B3EBC5600A50816 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		4354FE1F1B3EBC5600A50816 /* ProjectDali.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProjectDali.entitlements; sourceTree = "<group>"; };
+		4354FE201B3EBC6400A50816 /* ProjectDali WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ProjectDali WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4354FE211B3EBC6400A50816 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		43B716631B516A670012BBA4 /* RequestHealthKitAccessIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestHealthKitAccessIC.swift; path = Watch/InterfaceControllers/RequestHealthKitAccessIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4354FE1E1B3EBC5600A50816 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,21 +148,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4354FE221B3EBC6400A50816 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430881211B52576500A0BA5A /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4354FE031B3EBC4500A50816 /* InterfaceController.swift */,
+				43B716631B516A670012BBA4 /* RequestHealthKitAccessIC.swift */,
+			);
+			name = InterfaceControllers;
+			sourceTree = "<group>";
+		};
+		4320EB0A1B52CCC100F8C9F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4320EB081B52C80F00F8C9F2 /* DataModel.swift */,
+				4320EB061B52C77B00F8C9F2 /* AudioFileModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4354FDBE1B3EBC4500A50816 = {
 			isa = PBXGroup;
 			children = (
+				4354FE211B3EBC6400A50816 /* HealthKit.framework */,
+				4354FE1D1B3EBC5600A50816 /* HealthKit.framework */,
 				4354FDC91B3EBC4500A50816 /* ProjectDali */,
-				4354FDDE1B3EBC4500A50816 /* ProjectDaliTests */,
-				4354FDE91B3EBC4500A50816 /* ProjectDaliUITests */,
 				4354FDF31B3EBC4500A50816 /* ProjectDali WatchKit App */,
 				4354FE021B3EBC4500A50816 /* ProjectDali WatchKit Extension */,
 				4354FDC81B3EBC4500A50816 /* Products */,
+				4354FDDE1B3EBC4500A50816 /* ProjectDaliTests */,
+				4354FDE91B3EBC4500A50816 /* ProjectDaliUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,8 +202,10 @@
 		4354FDC91B3EBC4500A50816 /* ProjectDali */ = {
 			isa = PBXGroup;
 			children = (
+				4354FE1F1B3EBC5600A50816 /* ProjectDali.entitlements */,
 				4354FDCA1B3EBC4500A50816 /* AppDelegate.swift */,
 				4354FDCC1B3EBC4500A50816 /* ViewController.swift */,
+				4320EB0A1B52CCC100F8C9F2 /* Models */,
 				4354FDCE1B3EBC4500A50816 /* Main.storyboard */,
 				4354FDD11B3EBC4500A50816 /* Assets.xcassets */,
 				4354FDD31B3EBC4500A50816 /* LaunchScreen.storyboard */,
@@ -194,6 +235,7 @@
 		4354FDF31B3EBC4500A50816 /* ProjectDali WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				43256C381B432DEE00A00716 /* ProjectDali WatchKit App.entitlements */,
 				4354FDF41B3EBC4500A50816 /* Interface.storyboard */,
 				4354FDF71B3EBC4500A50816 /* Assets.xcassets */,
 				4354FDF91B3EBC4500A50816 /* Info.plist */,
@@ -204,7 +246,10 @@
 		4354FE021B3EBC4500A50816 /* ProjectDali WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4354FE031B3EBC4500A50816 /* InterfaceController.swift */,
+				4354FE201B3EBC6400A50816 /* ProjectDali WatchKit Extension.entitlements */,
+				430881211B52576500A0BA5A /* InterfaceControllers */,
+				434AC6051B4C61E900299B58 /* HealthKitManager.swift */,
+				43295B9B1B48333B00A2E745 /* StandardDeviationCalculator.swift */,
 				4354FE051B3EBC4500A50816 /* ExtensionDelegate.swift */,
 				4354FE071B3EBC4500A50816 /* Assets.xcassets */,
 				4354FE091B3EBC4500A50816 /* Info.plist */,
@@ -315,6 +360,15 @@
 				TargetAttributes = {
 					4354FDC61B3EBC4500A50816 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XEN7DUD59Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					4354FDDA1B3EBC4500A50816 = {
 						CreatedOnToolsVersion = 7.0;
@@ -326,9 +380,24 @@
 					};
 					4354FDEE1B3EBC4500A50816 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XEN7DUD59Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4354FDFD1B3EBC4500A50816 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XEN7DUD59Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -346,10 +415,10 @@
 			projectRoot = "";
 			targets = (
 				4354FDC61B3EBC4500A50816 /* ProjectDali */,
-				4354FDDA1B3EBC4500A50816 /* ProjectDaliTests */,
-				4354FDE51B3EBC4500A50816 /* ProjectDaliUITests */,
 				4354FDEE1B3EBC4500A50816 /* ProjectDali WatchKit App */,
 				4354FDFD1B3EBC4500A50816 /* ProjectDali WatchKit Extension */,
+				4354FDDA1B3EBC4500A50816 /* ProjectDaliTests */,
+				4354FDE51B3EBC4500A50816 /* ProjectDaliUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,7 +473,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4354FDCD1B3EBC4500A50816 /* ViewController.swift in Sources */,
+				4320EB091B52C80F00F8C9F2 /* DataModel.swift in Sources */,
 				4354FDCB1B3EBC4500A50816 /* AppDelegate.swift in Sources */,
+				4320EB071B52C77B00F8C9F2 /* AudioFileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4354FE061B3EBC4500A50816 /* ExtensionDelegate.swift in Sources */,
+				43B716641B516A670012BBA4 /* RequestHealthKitAccessIC.swift in Sources */,
+				43295B9C1B48333B00A2E745 /* StandardDeviationCalculator.swift in Sources */,
+				434AC6061B4C61E900299B58 /* HealthKitManager.swift in Sources */,
 				4354FE041B3EBC4500A50816 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +577,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -525,6 +600,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,6 +624,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -563,6 +640,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -572,13 +650,16 @@
 		4354FE0D1B3EBC4500A50816 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ProjectDali WatchKit Extension/ProjectDali WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ProjectDali WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -587,13 +668,16 @@
 		4354FE0E1B3EBC4500A50816 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ProjectDali WatchKit Extension/ProjectDali WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ProjectDali WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -603,14 +687,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ProjectDali WatchKit App/ProjectDali WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ProjectDali_WatchKit_Extension;
 				INFOPLIST_FILE = "ProjectDali WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e6a67c2b-e027-44ac-ab5f-216cfc111b6e";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -620,14 +707,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ProjectDali WatchKit App/ProjectDali WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ProjectDali_WatchKit_Extension;
 				INFOPLIST_FILE = "ProjectDali WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e6a67c2b-e027-44ac-ab5f-216cfc111b6e";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -637,10 +727,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectDali/ProjectDali.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectDali/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -648,10 +743,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectDali/ProjectDali.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjectDali/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.ProjectDali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -722,6 +822,7 @@
 				4354FE0E1B3EBC4500A50816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4354FE101B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +831,7 @@
 				4354FE121B3EBC4500A50816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4354FE141B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDali" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +840,7 @@
 				4354FE161B3EBC4500A50816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4354FE171B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliTests" */ = {
 			isa = XCConfigurationList;
@@ -746,6 +849,7 @@
 				4354FE191B3EBC4500A50816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4354FE1A1B3EBC4500A50816 /* Build configuration list for PBXNativeTarget "ProjectDaliUITests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +858,7 @@
 				4354FE1C1B3EBC4500A50816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

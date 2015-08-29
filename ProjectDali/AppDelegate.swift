@@ -7,15 +7,49 @@
 //
 
 import UIKit
+import HealthKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
+    let healthStore = HKHealthStore()
+    let dataModel = DataModel()
+    
+    
+//    let session = WCSession.defaultSession()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+        let masterNavigationViewController = self.window!.rootViewController as! UINavigationController
+        let masterViewController = masterNavigationViewController.topViewController as! ViewController
+        masterViewController.dataModel = self.dataModel
+        
+        // If can support Apple Watch, create session
+        
+//        if (WCSession.isSupported()) {
+//            
+////            let session = WCSession.defaultSession()
+//            session.delegate = self
+//            session.activateSession()
+//            
+//            if session.paired == false {
+//                
+//                // User hasn't paired a watch
+//            }
+//            
+//            if session.watchAppInstalled == false {
+//                
+//                // User doesn't have watch app installed
+//            }
+//        }
+        
+        
+        
         return true
     }
 
@@ -27,6 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        dataModel.saveData()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -39,8 +74,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        dataModel.saveData()
     }
+    
+    // MARK: - Save NSUserDefaults
+    
+    func saveData() {
+        dataModel.saveData()
+    }
+    
+    // MARK: - HealthKit Delegate
 
-
+    func applicationShouldRequestHealthAuthorization(application: UIApplication) {
+        self.healthStore.handleAuthorizationForExtensionWithCompletion {
+            success, error in
+            
+            if error != nil {
+                print("applicationShouldRequestHealthAuthorization \(error)")
+            }
+        }
+    }
+    
+    // MARK: - WatchConnectivity Delegate
+    
+//    func sessionWatchStateDidChange(session: WCSession) {
+//        
+//        // Paired state of Apple Watch has changed
+//        // Possible if user installs, uninstalls watch app
+//    }
+    
+    
 }
 

@@ -1,15 +1,128 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ProjectDali_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="kDC-pi-ggV" userLabel="Workout Group">
+                            <items>
+                                <group width="1" height="30" alignment="left" id="3o7-pa-PL2">
+                                    <items>
+                                        <button width="30" height="1" alignment="right" title="M" id="qFG-UL-Uki" userLabel="Mic Button">
+                                            <connections>
+                                                <action selector="userPressedMicrophone" destination="AgC-eL-Hgc" id="k0e-zq-KHy"/>
+                                            </connections>
+                                        </button>
+                                        <button width="30" height="1" alignment="left" title="S" id="kOL-dI-Iw6" userLabel="Stop Button">
+                                            <connections>
+                                                <action selector="stopWorkoutPressed" destination="AgC-eL-Hgc" id="lKn-6e-Kkf"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="1" heightAdjustment="-30" alignment="left" layout="vertical" id="0yf-dD-8cz">
+                                    <items>
+                                        <label width="1" height="0.20000000000000001" alignment="left" text="Label" numberOfLines="0" id="TcA-i4-VgR">
+                                            <fontDescription key="font" type="system" pointSize="8"/>
+                                        </label>
+                                        <label width="1" height="0.5" alignment="left" text="Label" numberOfLines="0" id="K5s-Sw-a9G">
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="8"/>
+                                        </label>
+                                        <label width="1" alignment="left" verticalAlignment="bottom" text="FORCE TOUCH TO LOCK SCREEN" textAlignment="center" numberOfLines="0" id="NGZ-ih-Qlv" userLabel="Info Label">
+                                            <fontDescription key="font" type="system" pointSize="8"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="1" alignment="center" id="shH-iB-0Gj">
+                            <items>
+                                <button width="0.5" height="0.5" alignment="center" verticalAlignment="center" title="Button" id="IoY-2a-aJj" userLabel="Start Button">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="startWorkoutPressed" destination="AgC-eL-Hgc" id="CtO-Ak-j86"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="forceTouchInfoButton" destination="NGZ-ih-Qlv" id="PeI-V3-KI1"/>
+                        <outlet property="microphoneButton" destination="qFG-UL-Uki" id="KdV-mk-MFn"/>
+                        <outlet property="monitorLabel" destination="K5s-Sw-a9G" id="dBW-bF-7iy"/>
+                        <outlet property="printLabel" destination="TcA-i4-VgR" id="Q7D-sr-sfU"/>
+                        <outlet property="startButton" destination="IoY-2a-aJj" id="3eq-rH-hmK"/>
+                        <outlet property="startGroup" destination="shH-iB-0Gj" id="Zpf-hB-gIG"/>
+                        <outlet property="stopButton" destination="kOL-dI-Iw6" id="5Yl-EB-2V9"/>
+                        <outlet property="workoutGroup" destination="kDC-pi-ggV" id="WHp-iy-QGD"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-143" y="308"/>
+        </scene>
+        <!--RequestHealthKitAccessIC-->
+        <scene sceneID="vb8-UO-n0b">
+            <objects>
+                <controller identifier="RequestHealthKitAccessIC" contentMode="top" hidesWhenLoading="NO" id="Euf-SW-QOo" customClass="RequestHealthKitAccessIC" customModule="ProjectDali_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="LHp-Sr-SP2" userLabel="HealthKit Group">
+                            <items>
+                                <group width="1" alignment="center" id="7t9-hj-UZP">
+                                    <items>
+                                        <label height="1" alignment="center" text="Label" textAlignment="center" id="v7f-t7-2mk"/>
+                                        <button width="30" height="30" alignment="right" title="i" id="51Q-Yj-tbz">
+                                            <connections>
+                                                <action selector="infoButtonPressed" destination="Euf-SW-QOo" id="n2W-vP-VOk"/>
+                                                <segue destination="opn-g2-olR" kind="push" identifier="ShowInfoIC" id="bbr-lW-lQT"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="1" heightAdjustment="-30" alignment="left" layout="vertical" id="clW-Go-k6I">
+                                    <items>
+                                        <label width="1" height="1" heightAdjustment="-30" alignment="center" text="Label" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.5" id="seZ-p7-pFH" userLabel="HealthKit Label">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <button width="1" height="30" alignment="center" title="Refresh" id="rit-pU-E6h">
+                                            <connections>
+                                                <action selector="refreshHealthKitStatusButtonPressed" destination="Euf-SW-QOo" id="geg-8g-uor"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="healthKitGroup" destination="LHp-Sr-SP2" id="SaY-Zf-hAI"/>
+                        <outlet property="healthKitLabel" destination="seZ-p7-pFH" id="a9V-jf-Clr"/>
+                        <outlet property="healthKitTitleLabel" destination="v7f-t7-2mk" id="iTT-AK-S0b"/>
+                        <outlet property="infoButton" destination="51Q-Yj-tbz" id="l1S-Fr-RHR"/>
+                        <outlet property="refreshHealthKitStatusButton" destination="rit-pU-E6h" id="cXg-Qv-G7v"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="61" y="308.5"/>
+        </scene>
+        <!--InfoIC-->
+        <scene sceneID="ig5-Wc-qJq">
+            <objects>
+                <controller identifier="InfoIC" hidesWhenLoading="NO" id="opn-g2-olR">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="eJb-u4-ZyB">
+                            <string key="text">1. Please go to the Health app on your iPhone  2. View sources  3. Press ProjectDali  4. Turn on the ability to read &amp; write heart rate data</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="274" y="308"/>
         </scene>
     </scenes>
 </document>
