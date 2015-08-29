@@ -42,7 +42,12 @@ class DataModel: NSObject {
     }
     
     func dataFilePath() -> String {
-        return documentsDirectory().stringByAppendingPathComponent("ProjectDali.plist")
+        
+        let url = NSURL(fileURLWithPath: documentsDirectory())
+        url.URLByAppendingPathComponent("ProjectDali.plist")
+
+        return url.path!
+//        return documentsDirectory().stringByAppendingPathComponent("ProjectDali.plist")
     }
     
     func documentsDirectory() -> String {

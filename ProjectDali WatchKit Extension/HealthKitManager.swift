@@ -119,9 +119,9 @@ class HealthKitManager: NSObject, HKWorkoutSessionDelegate {
             anchorValue = self.anchor
         }
         
-        let heartRateQuery = HKAnchoredObjectQuery(type:self.heartRateType, predicate: predicate, anchor: anchorValue, limit: 0) {
-            (query, samples, deletedObjects, anchor, error) -> Void in
-            
+        
+        let heartRateQuery = HKAnchoredObjectQuery(type: self.heartRateType, predicate: predicate, anchor: anchor, limit: 0) {
+            (query, samples, anchor, error) -> Void in
             if error != nil {
                 print("heartRateQuery \(error)")
             }
@@ -129,14 +129,25 @@ class HealthKitManager: NSObject, HKWorkoutSessionDelegate {
             self.anchor = anchorValue
         }
         
+//        let heartRateQuery = HKAnchoredObjectQuery(type:self.heartRateType, predicate: predicate, anchor: anchorValue, limit: 0) {
+//            (query, samples, deletedObjects, anchor, error) -> Void in
+//            
+//            if error != nil {
+//                print("heartRateQuery \(error)")
+//            }
+//            
+//            self.anchor = anchorValue
+//        }
+    
         // Create update block
-        heartRateQuery.updateHandler = {(query, samples, deletedObjects, anchor, error) -> Void in
+        heartRateQuery.updateHandler = {
+            (query, samples, deletedObjects, anchor, error) -> Void in
             
             if error != nil {
                 print("updateHandler \(error)")
             }
             
-            self.anchor = anchor
+            self.anchor = anchorValue
             self.addHeartRateSamples(samples)
         }
         
@@ -258,23 +269,12 @@ class HealthKitManager: NSObject, HKWorkoutSessionDelegate {
     
     func startWorkout() {
         
-        self.healthStore.startWorkoutSession(self.workoutSession) {
-            success, error in
-            
-            if error != nil {
-                print("startWorkoutSession \(error)")
-            }
-        }
+        self.healthStore.startWorkoutSession(self.workoutSession)
     } 
     
     func stopWorkout() {
         
-        self.healthStore.endWorkoutSession(self.workoutSession) {
-            success, error in
-            
-            if error != nil {
-                print("stopWorkoutSession \(error)")
-            }
-        }
+        self.healthStore.endWorkoutSession(self.workoutSession)
     }
+
 }

@@ -208,36 +208,36 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate, HealthKitMa
         let container = fileManager.containerURLForSecurityApplicationGroupIdentifier("group.extensiontexttaker")!
         let timeAtRecording = NSDate.timeIntervalSinceReferenceDate()
         let recordingName = "AudioRecording-\(timeAtRecording)"
-        let fileName = recordingName.stringByAppendingPathExtension("mp4")
-        let url = container.URLByAppendingPathComponent(fileName!)
         
-        self.presentAudioRecordingControllerWithOutputURL(url, preset: WKAudioRecordingPreset.NarrowBandSpeech, maximumDuration: 60.0, actionTitle: "Save") {
-                didSave, error in
-            
+        let url = container
+        url.URLByAppendingPathComponent(recordingName)
+        url.URLByAppendingPathComponent("mp4")
+        
+        self.presentAudioRecorderControllerWithOutputURL(url, preset: WKAudioRecorderPreset.NarrowBandSpeech, options: nil) { (didSave, error) -> Void in
             
             if error != nil {
                 print("Audio recording: \(error)")
-
+                
             } else {
                 
                 // Transfer the file to iPhone
                 let metadata = ["App": "Dali"]
                 
-//                let fileTransfer = WCSession.defaultSession().transferFile(url, metadata: metadata)
-
+                //                let fileTransfer = WCSession.defaultSession().transferFile(url, metadata: metadata)
+                
                 self.session.transferFile(url, metadata: metadata)
-//                do {
-//                    try self.session.transferFile(url, metadata: metadata)
-//
-//
-//                } catch {
-//                    
-//                    print("error "\(error))
-//                }
+                //                do {
+                //                    try self.session.transferFile(url, metadata: metadata)
+                //
+                //
+                //                } catch {
+                //
+                //                    print("error "\(error))
+                //                }
                 
                 // There is a method to look at what is outstanding
             }
-            
+
         }
     }
     
@@ -347,8 +347,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate, HealthKitMa
     func healthKitManager(controller: HealthKitManager, workoutDidStartAtDate workoutStartDate: NSDate) {
         
         let calendar = NSCalendar.autoupdatingCurrentCalendar()
-//        self.oneHourAfterWorkoutStartDate = calendar.dateByAddingUnit(NSCalendarUnit.Hour, value: 1, toDate: workoutStartDate, options: [])
-        self.workoutStartLoggingDate = calendar.dateByAddingUnit(NSCalendarUnit.Minute, value: 1, toDate: workoutStartDate, options: [])
+        self.workoutStartLoggingDate = calendar.dateByAddingUnit(NSCalendarUnit.Hour, value: 1, toDate: workoutStartDate, options: [])
+//        self.workoutStartLoggingDate = calendar.dateByAddingUnit(NSCalendarUnit.Minute, value: 1, toDate: workoutStartDate, options: [])
 
     }
     
